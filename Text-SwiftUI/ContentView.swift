@@ -10,15 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. ")
+            Text("Lorem Ipsum")
                 .font(.largeTitle)
                 .underline(color: Color.red)
-                .rotation3DEffect(
-                    .degrees(25),
-                    axis: (x: 1.0, y: 0.0, z: 0.0))
-                .shadow(color: .gray, radius: 2, x: 0, y: 10)
-                .lineLimit(10)
-                .lineSpacing(20)
+                .foregroundStyle(.red)
+            + Text(" dolor sit amet")
+                .font(.body)
+                .foregroundStyle(.blue)
+            + Text(" consectetur adipiscing elit")
+                .font(.body)
+                .bold()
+            + Text(" sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .font(.headline)
+                .foregroundStyle(.green)
+                
         }
         .padding()
     }
